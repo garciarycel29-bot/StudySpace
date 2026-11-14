@@ -186,7 +186,56 @@ gap: 10px;
     font-size: 14px;
     line-height: 1.7;
 }
+/* MOBILE */
+@media screen and (max-width: 480px) {
 
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .mid h1 {
+        font-size: 2.5rem;
+    }
+
+    .mid h2 {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 13px 25px;
+    }
+
+    /* MOOD STRIP - LANDSCAPE */
+    .mood-strip {
+        position: static;
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .mood-options {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .mood-btn {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mood-btn img {
+        width: 50px;
+        height: 50px;
+    }
+}
 
 /* TABLET */
 @media screen and (max-width: 768px) {
