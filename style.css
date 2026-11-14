@@ -200,42 +200,40 @@ gap: 10px;
         padding-top: 60px;
     }
 
-   @media screen and (max-width: 1024px) {
-    .mood-strip {
-        width: 95%;
-        max-width: 450px;
-        padding: 15px 10px;
-        box-sizing: border-box;
-    }
+.mood-strip {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 20px auto;
+}
+
 
     .mood-options {
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        flex-wrap: nowrap;
         gap: 5px;
-        width: 100%;
     }
 
     .mood-btn {
-        flex: 1;
-        min-width: 0;
+        width: 55px;
         height: 55px;
+        flex-shrink: 1;
     }
 
     .mood-btn img {
         width: 100%;
-        height: 50px;
+        height: 100%;
         object-fit: contain;
     }
-}
 
-    .mood-quote {
-        position: static;
-        width: 90%;
-        max-width: 400px;
-        margin: 25px auto;
-    }
+   .mood-quote {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 30px auto;
+}
 }
 /* MOBILE */
 @media screen and (max-width: 480px) {
@@ -694,3 +692,4 @@ footer {
     }
 
 }
+
