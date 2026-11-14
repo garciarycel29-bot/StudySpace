@@ -134,7 +134,7 @@ height: 100px;
 
 .mood-options {
   display: flex;
-  align-items: flex-center;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
 
@@ -186,59 +186,10 @@ gap: 10px;
     font-size: 14px;
     line-height: 1.7;
 }
-/* MOBILE */
-@media screen and (max-width: 480px) {
 
-    header h1 {
-        font-size: 1.6rem;
-    }
 
-    nav a {
-        font-size: 13px;
-        padding: 10px;
-    }
-
-    .mid h1 {
-        font-size: 2.5rem;
-    }
-
-    .mid h2 {
-        font-size: 14px;
-    }
-
-    .button {
-        font-size: 15px;
-        padding: 13px 25px;
-    }
-
-    /* MOOD STRIP - LANDSCAPE */
-    .mood-strip {
-        position: static;
-        width: 95%;
-        margin: 20px auto;
-        padding: 15px;
-    }
-
-    .mood-options {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .mood-btn {
-        width: 55px;
-        height: 55px;
-    }
-
-    .mood-btn img {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-/* TABLET */
-@media screen and (max-width: 768px) {
+//* TABLET AND SMALLER LAPTOP */
+@media screen and (max-width: 1024px) {
 
     header {
         flex-direction: column;
@@ -251,8 +202,30 @@ gap: 10px;
 
     .mood-strip {
         position: static;
-        width: fit-content;
+        width: 95%;
+        max-width: 450px;
         margin: 20px auto;
+        padding: 15px;
+    }
+
+    .mood-options {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    .mood-btn {
+        width: 55px;
+        height: 55px;
+        flex-shrink: 1;
+    }
+
+    .mood-btn img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .mood-quote {
@@ -262,7 +235,6 @@ gap: 10px;
         margin: 25px auto;
     }
 }
-
 /* MOBILE */
 @media screen and (max-width: 480px) {
 
@@ -286,6 +258,33 @@ gap: 10px;
     .button {
         font-size: 15px;
         padding: 13px 25px;
+    }
+
+    .mood-strip {
+        width: 95%;
+        max-width: 100%;
+        padding: 12px 5px;
+    }
+
+    .mood-strip h2 {
+        font-size: 14px;
+    }
+
+    .mood-options {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .mood-btn {
+        width: 52px;
+        height: 52px;
+    }
+
+    .mood-btn img {
+        width: 100%;
+        height: 100%;
     }
 }
 
