@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>MindSpace</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <header>
+           <div class="logo-container">
+            <img src="mind.png" alt="MindSpace Logo" class="logo">
+                <h1>MindSpace</h1>
+           </div>
+
+        <nav>
+             <a href="index.html">Home</a>
+            <a href="track.html">Mood Check-In</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+        </header>
+
+            <main>
+                <div class="mid">
+                    <h1>MindSpace</h1>
+                    <h2>A safe space to pause, reflect, and take care of your mind.</h2>
+              </div>
+     <section class="mood-strip">
+  <h2>How are you <br> feeling today?</h2>
+  <div class="mood-options">
+    <button class="mood-btn" data-mood="happy"><img src="happy.png" alt="happy"></button>
+    <button class="mood-btn" data-mood="good"><img src="good.png" alt="good"></button>
+    <button class="mood-btn" data-mood="okay"><img src="okay.png" alt="okay"></button>
+    <button class="mood-btn" data-mood="sad"><img src="sad.png" alt="sad"></button>
+    <button class="mood-btn" data-mood="low"><img src="low.png" alt="low"></button>
+  </div>
+</section>
+   <div class="mood-quote" id="moodQuote">
+    <h4 id="moodTitle">A Little Reminder</h4>
+    <p id="quoteText">Choose how you're feeling today.</p>
+</div>
+
+            </main>
+    
+            <section class="quiz-preview">
+    <h2>Try the Mood Check-In</h2>
+    <p class="preview-caption">
+A simple emotional check-in to help you understand how you've been feeling lately. There are no right or wrong answers.    </p>
+
+    <a href="track.html" class="preview-card" aria-label="Open the Mood Check-In quiz">
+        <div class="preview-question">
+                <h3>1. How have you been feeling emotionally over the past two weeks?</h3>
+             <label><input type="radio" name="general1" value="Very good" required> Very good</label><br
+                <label><input type="radio" name="general1" value="Good"> Good</label><br>
+                <label><input type="radio" name="general1" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="general1" value="Not so good"> Not so good</label><br>
+                <label><input type="radio" name="general1" value="Very difficult"> Very difficult</label>
+            </div>
+        </div>
+        <div class="preview-question">
+                <h3>17. I feel like I do not have someone I can comfortably talk to when I have problems.</h3>
+            <span class="preview-option"><i class="dot"></i> High</span>
+        </div>
+    </a>
+            <a href="track.html" class="button">Let's check in</a>
+
+</section>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>MindSpace | A Safe Space for Your Mind.</p>
+        <p>Your feelings matter. Always.</p>
+    </footer>z
+
+    </body>
+</html>

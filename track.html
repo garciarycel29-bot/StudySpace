@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>MindSpace | Emotional Self-Assessment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="mind.png" alt="MindSpace Logo" class="logo">
+            <h1>MindSpace</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="track.html" class="active">Mood Check-In</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <div class="quiz-container">
+
+        <h1>Emotional Self-Assessment</h1>
+
+        <p class="subtitle">
+            Take a moment to understand how you have been feeling lately.
+            Answer honestly. There are no right or wrong answers.
+        </p>
+
+        <form id="moodForm">
+
+
+            <h2>Part I. General Emotional Check-In</h2>
+
+            <p class="subtitle">
+                Think about how you have been feeling over the past two weeks.
+            </p>
+
+            <div class="question">
+                <h3>1. How have you been feeling emotionally over the past two weeks?</h3>
+
+                <label><input type="radio" name="general1" value="Very good" required> Very good</label>
+                <label><input type="radio" name="general1" value="Good"> Good</label>
+                <label><input type="radio" name="general1" value="Neutral"> Neutral</label>
+                <label><input type="radio" name="general1" value="Not so good"> Not so good</label>
+                <label><input type="radio" name="general1" value="Very difficult"> Very difficult</label>
+            </div>
+
+            <div class="question">
+                <h3>2. Do you feel that you are emotionally okay with how things are going in your life right now?</h3>
+
+                <label><input type="radio" name="general2" value="Yes, I feel okay" required> Yes, I feel okay</label>
+                <label><input type="radio" name="general2" value="Sometimes"> Sometimes, but there are moments when I struggle</label>
+                <label><input type="radio" name="general2" value="Not sure"> I'm not sure</label>
+                <label><input type="radio" name="general2" value="No"> No, I have been having a difficult time</label>
+            </div>
+
+
+
+            <h2>Part II. Emotional Assessment</h2>
+
+            <p class="subtitle">
+                Read each statement and choose how often you have experienced it
+                during the past two weeks.
+            </p>
+
+           <div class="answer-guide">
+    <p><strong>Answer Guide:</strong></p>
+    <p><strong>Never</strong> – I haven't experienced this.</p>
+    <p><strong>Some days</strong> – I experienced this occasionally.</p>
+    <p><strong>Most days</strong> – I experienced this frequently.</p>
+    <p><strong>Nearly every day</strong> – I experienced this almost daily.</p>
+</div>
+
+
+
+            <h3>A. Stress and Feeling Overwhelmed</h3>
+
+            <div class="question" data-category="stress">
+                <h3>3. I feel overwhelmed by the responsibilities or tasks I need to accomplish.</h3>
+                <label><input type="radio" name="q1" value="0" required> Never</label>
+                <label><input type="radio" name="q1" value="1"> Some days</label>
+                <label><input type="radio" name="q1" value="2"> Most days</label>
+                <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="stress">
+                <h3>4. I find it difficult to relax because I keep thinking about the things I need to do.</h3>
+                <label><input type="radio" name="q2" value="0" required> Never</label>
+                <label><input type="radio" name="q2" value="1"> Some days</label>
+                <label><input type="radio" name="q2" value="2"> Most days</label>
+                <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="stress">
+                <h3>5. I feel pressured when I have too many things to handle at once.</h3>
+                <label><input type="radio" name="q3" value="0" required> Never</label>
+                <label><input type="radio" name="q3" value="1"> Some days</label>
+                <label><input type="radio" name="q3" value="2"> Most days</label>
+                <label><input type="radio" name="q3" value="3"> Nearly every day</label>
+            </div>
+
+
+
+            <h3>B. Anxiety and Excessive Worrying</h3>
+
+            <div class="question" data-category="anxiety">
+                <h3>6. I feel nervous or uneasy even when there is no clear reason.</h3>
+                <label><input type="radio" name="q4" value="0" required> Never</label>
+                <label><input type="radio" name="q4" value="1"> Some days</label>
+                <label><input type="radio" name="q4" value="2"> Most days</label>
+                <label><input type="radio" name="q4" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="anxiety">
+                <h3>7. I worry about things that might happen in the future.</h3>
+                <label><input type="radio" name="q5" value="0" required> Never</label>
+                <label><input type="radio" name="q5" value="1"> Some days</label>
+                <label><input type="radio" name="q5" value="2"> Most days</label>
+                <label><input type="radio" name="q5" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="anxiety">
+                <h3>8. I find it difficult to stop thinking about things that worry me.</h3>
+                <label><input type="radio" name="q6" value="0" required> Never</label>
+                <label><input type="radio" name="q6" value="1"> Some days</label>
+                <label><input type="radio" name="q6" value="2"> Most days</label>
+                <label><input type="radio" name="q6" value="3"> Nearly every day</label>
+            </div>
+
+
+
+            <h3>C. Sadness and Low Mood</h3>
+
+            <div class="question" data-category="sadness">
+                <h3>9. I feel sad or down even when I cannot explain why.</h3>
+                <label><input type="radio" name="q7" value="0" required> Never</label>
+                <label><input type="radio" name="q7" value="1"> Some days</label>
+                <label><input type="radio" name="q7" value="2"> Most days</label>
+                <label><input type="radio" name="q7" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="sadness">
+                <h3>10. I have less interest in activities that I usually enjoy.</h3>
+                <label><input type="radio" name="q8" value="0" required> Never</label>
+                <label><input type="radio" name="q8" value="1"> Some days</label>
+                <label><input type="radio" name="q8" value="2"> Most days</label>
+                <label><input type="radio" name="q8" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="sadness">
+                <h3>11. I sometimes feel disconnected from the things and people around me.</h3>
+                <label><input type="radio" name="q9" value="0" required> Never</label>
+                <label><input type="radio" name="q9" value="1"> Some days</label>
+                <label><input type="radio" name="q9" value="2"> Most days</label>
+                <label><input type="radio" name="q9" value="3"> Nearly every day</label>
+            </div>
+
+
+
+            <h3>D. Emotional Exhaustion</h3>
+
+            <div class="question" data-category="exhaustion">
+                <h3>12. I feel mentally tired even after taking a break.</h3>
+                <label><input type="radio" name="q10" value="0" required> Never</label>
+                <label><input type="radio" name="q10" value="1"> Some days</label>
+                <label><input type="radio" name="q10" value="2"> Most days</label>
+                <label><input type="radio" name="q10" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="exhaustion">
+                <h3>13. I find it difficult to concentrate on my schoolwork or daily responsibilities.</h3>
+                <label><input type="radio" name="q11" value="0" required> Never</label>
+                <label><input type="radio" name="q11" value="1"> Some days</label>
+                <label><input type="radio" name="q11" value="2"> Most days</label>
+                <label><input type="radio" name="q11" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="exhaustion">
+                <h3>14. I sometimes struggle to find the motivation to complete my usual activities.</h3>
+                <label><input type="radio" name="q12" value="0" required> Never</label>
+                <label><input type="radio" name="q12" value="1"> Some days</label>
+                <label><input type="radio" name="q12" value="2"> Most days</label>
+                <label><input type="radio" name="q12" value="3"> Nearly every day</label>
+            </div>
+
+
+
+            <h3>E. Social Connection and Loneliness</h3>
+
+            <div class="question" data-category="loneliness">
+                <h3>15. I sometimes feel alone even when I am surrounded by other people.</h3>
+                <label><input type="radio" name="q13" value="0" required> Never</label>
+                <label><input type="radio" name="q13" value="1"> Some days</label>
+                <label><input type="radio" name="q13" value="2"> Most days</label>
+                <label><input type="radio" name="q13" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="loneliness">
+                <h3>16. I find it difficult to express what I am feeling to other people.</h3>
+                <label><input type="radio" name="q14" value="0" required> Never</label>
+                <label><input type="radio" name="q14" value="1"> Some days</label>
+                <label><input type="radio" name="q14" value="2"> Most days</label>
+                <label><input type="radio" name="q14" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question" data-category="loneliness">
+                <h3>17. I feel like I do not have someone I can comfortably talk to when I have problems.</h3>
+                <label><input type="radio" name="q15" value="0" required> Never</label>
+                <label><input type="radio" name="q15" value="1"> Some days</label>
+                <label><input type="radio" name="q15" value="2"> Most days</label>
+                <label><input type="radio" name="q15" value="3"> Nearly every day</label>
+            </div>
+
+
+            <button type="submit">View My Results</button>
+
+        </form>
+
+
+
+        <div id="result" class="result hidden">
+
+            <h2>Your Emotional Reflection 💚</h2>
+
+            <p id="resultMessage"></p>
+
+            <div id="categoryResults"></div>
+
+            <p>
+                Remember that your feelings are valid. Take your time,
+                and do not hesitate to reach out to someone you trust
+                when you need support.
+            </p>
+
+            <button type="button" id="checkAgain" class="again-button">
+                Take the Assessment Again
+            </button>
+
+        </div>
+
+        <p class="disclaimer">
+            This assessment is intended for emotional awareness and
+            self-reflection only. It is not a clinical test and cannot
+            diagnose mental health conditions.
+        </p>
+
+    </div>
+
+
+    <footer>
+        <p>MindSpace | A Safe Space for Your Mind.</p>
+    </footer>
+
+</body>
+</html>
