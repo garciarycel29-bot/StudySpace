@@ -188,7 +188,7 @@ gap: 10px;
 }
 
 
-//* TABLET AND SMALLER LAPTOP */
+/* TABLET AND SMALLER LAPTOP */
 @media screen and (max-width: 1024px) {
 
     header {
