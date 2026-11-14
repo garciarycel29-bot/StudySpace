@@ -200,33 +200,35 @@ gap: 10px;
         padding-top: 60px;
     }
 
+   @media screen and (max-width: 1024px) {
     .mood-strip {
-        position: static;
         width: 95%;
         max-width: 450px;
-        margin: 20px auto;
-        padding: 15px;
+        padding: 15px 10px;
+        box-sizing: border-box;
     }
 
     .mood-options {
+        display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        flex-wrap: nowrap;
         gap: 5px;
+        width: 100%;
     }
 
     .mood-btn {
-        width: 55px;
+        flex: 1;
+        min-width: 0;
         height: 55px;
-        flex-shrink: 1;
     }
 
     .mood-btn img {
         width: 100%;
-        height: 100%;
+        height: 50px;
         object-fit: contain;
     }
+}
 
     .mood-quote {
         position: static;
