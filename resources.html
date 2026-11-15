@@ -1,28 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindSpace</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    </head>
-    <body>
-      <header>
-           <div class="logo-container">
-            <img src="mind.png" alt="MindSpace Logo" class="logo">
-                <h1>MindSpace</h1>
-           </div>
-        <nav>
-             <a href="index.html">Home</a>
-            <a href="track.html">Mood Check-In</a>
-            <a href="resources.html">Resources</a>
-        </nav>
-        </header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources | MindSpace</title>
 
-      <footer>
-        <p>© 2026 MindSpace. Take care of your mind.</p>
-    </footer>
+  <!-- Google Fonts: Fraunces for headings, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="mind.png" alt="MindSpace Logo" class="logo" />
+      <h1>MindSpace</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="track.html">Mind Check</a>
+      <a href="resources.html" class="active">Resources</a>
+    </nav>
+  </header>
 
-    </body>
+  <main id="main">
+
+     <!-- ================= 2. CRISIS HOTLINES ================= -->
+    <section aria-labelledby="crisisTitle">
+      <div class="crisis-banner">
+        <h2 id="crisisTitle">Need help right now? Support is available 24/7.</h2>
+        <p class="crisis-reassure">You are not alone. Reaching out is a sign of strength.</p>
+
+        <div class="hotline-grid">
+          <!-- NCMH Crisis Hotline -> Official NCMH Website -->
+          <a href="https://ncmh.gov.ph" target="_blank" rel="noopener noreferrer" class="hotline-card">
+            <h3>NCMH Crisis Hotline</h3>
+            <span class="hotline-number">1553</span>
+            <p class="hotline-meta">
+              <span>For anyone experiencing emotional distress or crisis</span>
+              <span>Available 24/7 &middot; Free nationwide</span>
+            </p>
+          </a>
+
+          <a href="https://ncmh.gov.ph" target="_blank" rel="noopener noreferrer" class="hotline-card">
+            <h3>NCMH Mobile</h3>
+            <span class="hotline-number">0917-899-8727</span>
+            <p class="hotline-meta">
+              <span>Same caring support, reachable from any mobile phone</span>
+              <span>Available 24/7</span>
+            </p>
+          </a>
+
+          <a href="https://findahelpline.com/organizations/hopeline" target="_blank" rel="noopener noreferrer" class="hotline-card">
+            <h3>Hopeline PH Hotline</h3>
+            <span class="hotline-number">(02) 8804-4673</span>
+            <p class="hotline-meta">
+              <span>For students and anyone who needs someone to listen</span>
+              <span>Available 24/7 &middot; Landline</span>
+            </p>
+          </a>
+
+          <a href="https://findahelpline.com/organizations/hopeline" target="_blank" rel="noopener noreferrer" class="hotline-card">
+            <h3>Hopeline PH Mobile</h3>
+            <span class="hotline-number">0917-558-4673</span>
+            <p class="hotline-meta">
+              <span>A safe, judgment-free line any time of day</span>
+              <span>Available 24/7</span>
+            </p>
+          </a>
+        </div>
+
+        <p class="crisis-emergency">
+          If you or someone near you is in immediate danger, call 911.
+        </p>
+      </div>
+    </section>
+
+
+    <section aria-labelledby="directoryTitle">
+      <h2 id="directoryTitle">Campus Guidance Directory</h2>
+      <p class="section-sub">
+        These campus offices are here to listen about anything at all.
+        Every conversation is private.
+      </p>
+
+      <div class="directory-grid">
+        <!-- Counselor card 1 (placeholder contact details) -->
+        <article class="card counselor-card">
+          <div class="card-top">
+            <h3>Student Wellness Office</h3>
+            <span class="badge-verified">✓ Verified</span>
+          </div>
+          <p class="counselor-role">Dr. Maria Santos — Guidance Counselor</p>
+          <div class="contact-box">
+            <p><strong>Email:</strong> wellness@g.batstate-u.edu.ph</p>
+            <p><strong>Phone:</strong> (+63) 132456789</p>
+            <p><strong>Location:</strong> CICS Building, Room 204</p>
+            <p><strong>Hours:</strong> Mon–Thu, 9:00 AM – 4:00 PM</p>
+          </div>
+        </article>
+
+        <!-- Counselor card 2 (placeholder contact details) -->
+        <article class="card counselor-card">
+          <div class="card-top">
+            <h3>Counseling &amp; Career Services</h3>
+            <span class="badge-verified">✓ Verified</span>
+          </div>
+          <p class="counselor-role">James dela Cruz — Wellness Counselor</p>
+          <div class="contact-box">
+            <p><strong>Email:</strong> counseling@g.batstate-u.edu.ph</p>
+            <p><strong>Phone:</strong> (+63) 124356789</p>
+            <p><strong>Location:</strong> CICS Building, Faculty Room 112</p>
+            <p><strong>Hours:</strong> Mon–Thu, 9:00 AM – 4:00 PM</p>
+          </div>
+        </article>
+
+        <!-- Counselor card 3 (placeholder contact details) -->
+        <article class="card counselor-card">
+          <div class="card-top">
+            <h3>Guidance Office</h3>
+            <span class="badge-verified">✓ Verified</span>
+          </div>
+          <p class="counselor-role">Ana Reyes — Senior Guidance Counselor</p>
+          <div class="contact-box">
+            <p><strong>Email:</strong> guidance@g.batstate-u.edu.ph</p>
+            <p><strong>Phone:</strong> (+63) 123456789</p>
+            <p><strong>Location:</strong> Guidance Office, Room 305</p>
+            <p><strong>Hours:</strong> Mon–Thu, 9:00 AM – 4:00 PM</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="confidentiality-note">
+        All appointments are private and confidential. Contact details above are placeholders —
+        your campus will share the official ones here.
+      </p>
+    </section>
+
+   
+    <!-- ================= 3. SELF-HELP GUIDES ================= -->
+    <section aria-labelledby="guidesTitle">
+      <h2 id="guidesTitle">Self-Help Guides</h2>
+      <p class="section-sub">
+        Small, gentle activities you can try any time. Open one that feels right for you.
+      </p>
+
+      <div class="guides-stack">
+
+        <!-- Accordion 1: Breathing (reconstructed) -->
+        <details class="resource-card">
+          <summary>Deep Breathing</summary>
+          <div class="accordion-content">
+            <p>Breathe in slowly through your nose for four counts, hold for four, then breathe out gently for six. Repeat until your shoulders feel softer.</p>
+            <span class="activity-time">⏱ About 5 minutes</span>
+          </div>
+        </details>
+
+        <!-- Accordion 2: Professional help steps (reconstructed) -->
+        <details class="resource-card">
+          <summary>How to Reach Out for Professional Help</summary>
+          <div class="accordion-content">
+            <ol class="steps-list">
+              <li>Decide what you would like to talk about — it does not have to be perfectly clear.</li>
+              <li>Choose a campus office from the directory above and send a short message or email.</li>
+              <li>Pick a time that works for you. Every appointment is private and confidential.</li>
+              <li>Show up as you are. Listening is the counselor's job, not judging.</li>
+            </ol>
+          </div>
+        </details>
+
+        <!-- Accordion 3: Stretching -->
+        <details class="resource-card">
+          <summary>Gentle Stretching</summary>
+          <div class="accordion-content">
+            <p>Roll your shoulders, reach for the sky, and gently stretch your neck. Moving a little helps release the tension you didn't notice you were holding.</p>
+            <span class="activity-time">⏱ About 5 minutes</span>
+          </div>
+        </details>
+
+        <!-- Accordion 4: Journaling -->
+        <details class="resource-card">
+          <summary>Journaling</summary>
+          <div class="accordion-content">
+            <p>Write down whatever is on your mind — no editing, no rules. Seeing your thoughts on paper often makes them feel lighter.</p>
+            <span class="activity-time">⏱ About 10 minutes</span>
+          </div>
+        </details>
+
+        <!-- Accordion 5: 5-4-3-2-1 grounding -->
+        <details class="resource-card">
+          <summary>5-4-3-2-1 Grounding</summary>
+          <div class="accordion-content">
+            <p>Name five things you can see, four you can touch, three you can hear, two you can smell, and one you can taste. It gently brings you back to the present moment.</p>
+            <span class="activity-time">⏱ About 5 minutes</span>
+          </div>
+        </details>
+
+        <!-- Accordion 6: Mindful walk -->
+        <details class="resource-card">
+          <summary>Mindful Walk</summary>
+          <div class="accordion-content">
+            <p>Take a short walk and notice the sky, the sounds, and the feeling of each step. Let the movement carry some of the weight for a while.</p>
+            <span class="activity-time">⏱ About 10 minutes</span>
+          </div>
+        </details>
+
+        <!-- Accordion 7: Gratitude check-in -->
+        <details class="resource-card">
+          <summary>Gratitude Check-In</summary>
+          <div class="accordion-content">
+            <p>Think of three small things that went okay today — a kind message, a good meal, a moment of quiet. Noticing the good is a gentle daily habit.</p>
+            <span class="activity-time">⏱ About 3 minutes</span>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>MindSpace | A Safe Space for Your Mind.</p>
+    <p class="footer-disclaimer">
+      MindSpace is a support tool for emotional awareness and self-reflection.
+      It is not a substitute for professional care.
+    </p>
+  </footer>
+</body>
 </html>
